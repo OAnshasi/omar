@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+
+<title> Designing style sheets </title>
+<style>
+
+body { font-family: Monotype Corsiva; 
+    font-size:larger;
+    background-color: rgba(49, 42, 42, 0.932);
+    color:white;}
+    em {color:darkred;}
+    b {color:gold;
+        border: 2px solid lightblue; 
+        margin: 1em;
+        padding: 0.5 em;
+        }   
+    
+        mark { font-size: 120%; 
+               color:blueviolet;}
+    
+        strong {font-size: 115%;
+                color:aqua
+            }
+            
+        em { font-size:118;
+             color: rgb(0, 68, 255); }   
+             .red{color:red;}
+ .green{color:green;
+}
+ .blue{color:blue;}      
+ 
+ 
+ .serif{font-family:serif;}
+ .sans-serif{font-family:sans-serif;}
+ .cursive{font-family:cursive;}
+ .fantasy{font-family:fantasy;}
+ .monospace{font-family:monospace;}
+
+
+ .bold{font-weight:bold;}
+ .italic{font-style:italic;}
+ .underline{text-decoration:underline;}
+
+</style>
+</head>
+             
+<body>
+        <h1><strong> Designing By CSS  </strong></h1>
+
+        <h2><p><strong><mark><em>  DSS Lesson(1) </em></mark></strong></p></h2>
+
+        <div> <strong><em><mark> CSS:-</mark></em></strong> Cascading style sheets. </div>
+        <div> A language for describing the visual appearence of web pages, including properties such as 
+            their layout , colors and fonts. 
+        </div>
+
+        <p> <strong> Using CSS </strong> you'll able to greatly improve the look your 
+        <em> HTML </em> pages. </p>
+
+        <hr>
+
+        <h2><p><strong><mark><em> DSS Lesson(3) </em></mark></strong></p></h2>
+        <p> When you load a web page, somehow the browser takes a piece of <mark> HTML </mark>
+            text, and it creats the two dimensional image that appears in your browser window. </p>
+
+            <div> <h3><mark><em><strong> Data structure:- </strong></em></mark></h3><br>
+                It's a sort of organise map of what's going to end up on the page, it's also what developer tools
+            let's us look at. </div>
+
+            <div> When the browser read the <mark> HTML </mark> source it builds up
+            a map in the computer's memory of what all the elements are that it will need to put on the screen.<br>
+            This map shows which elements are nested inside which other elements, <em> doing this 
+                step first 
+            </em> makes a much more practical to log out the elements on the screen, it's kind of like 
+         making an out line of the page, this kind of structure is called <mark> TREE STRUCTURE.
+             <br>
+         </mark>
+         Because, each element can have branches coming out of it to other elements, for each element
+         there will be branches going to the elements that are nested inside of it, like <em> (li) </em>
+         or <strong> list items </strong> inside the <em> (ol) </em> or <strong> ordered lists. </strong></div>
+
+         <div> The particular tree structure that the browser builds out of <mark> HTML </mark>
+         is called the <mark> "DOM" </mark> or <strong> DOCUMENT OBJECT MODEL </strong>. The <mark> DOM 
+         </mark> has a tree structure for each <mark> HTML </mark> element.</div>
+
+         <hr> 
+         
+         <h2> <p>  <strong> <mark><em> DSS Lesson(5) </em></mark></strong></p></h2>
+
+         <p> Every element that appears on the page gets <strong>laid out</strong> into a box, <br>
+         and these boxes land inside of other boxes. <em>And the layout of these boxes</em>, <br>
+         it's controlled by the tree structure with a little help from the <mark> CSS.</mark>  </p>
+         
+         <hr>
+
+         <h2><p><mark><strong><em> DSS Lesson (6) </em></strong></mark></p></h2>
+
+         <div> If we wanna apply a style to <strong> every tag </strong> like 
+         <ol> <li style="color:red"> (li) </li>
+              <li style="color:green"> (ol) </li>
+              <li style="color:blue"> (p) </li>
+              <li style="color:yellow"> (ul) </li></ol>
+         in the document instead of just one at a time, <br>
+         <em> One way we can do that </em> is by putting a <mark> CSS 
+         </mark> rule set into the document's head element by creating a special element
+         called <strong> (style) </strong> </div>
+
+         <div> The <em> (style) </em> information that we'll put it in the head will be
+         applied throughout the document. </div>
+
+         <hr>
+
+         <h2><p><mark><strong><em> DSS Lesson (12) </em></strong></mark></p></h2>
+
+         <p> The <mark> Ruleset </mark> of <mark> CSS </mark>
+         is made of parts :- <ol> <li> Selector </li>
+         <li> Declaration blocks </li></ol>   
+         The <strong> selector </strong> is the part that says which <mark> HTML </mark>
+         element the rule is going to work on. <br> 
+         The <strong> Declaration block </strong> says how the rule will <em> modify </em> these elements. </p>
+        
+        
+         <hr>
+
+         <h2><p><strong><mark><em> DSS Lesson(14) </em></mark></strong></p></h2>
+
+         <div> You don't always want to style all elements og the some tipe in exactle the same way 
+             though.<br>
+             If you wanna style something or part of something like <strong> (p) paragraphs </strong>
+             you can use the <em>  class  </em> attribute. 
+         </div>
+
+         <div> <mark> Class :- </mark> A group of things with the same characteristics. (In general) </div>
+         <div> <mark> Class :- </mark> It's just a special attribute that we can use it to tell the browser,
+         <mark> for instanse </mark> some paragraphs need to have different style that other paragraphs. (In our lesson)</div>
+
+         <p> Use a <strong> Class </strong> when there could be several elements that need the same style. <br>
+         Use an <em> Id </em> when there's only one element to apply it to. </p>
+
+         
+         <hr>
+
+         <h2><p> <strong><mark><em> DSS Lesson(15) </em></mark></strong></p></h2>
+
+            <p> <mark> CSS </mark> also let you combine selectors. <br> <br>
+            
+            <strong> The descendant selectors:- </strong> This <strong> descendant selectors </strong>
+            is only one of many ways to combine selectors. </p>
+
+
+        <hr>
+        
+        
+            <h2><p><strong><mark><em> DSS Lesson(16) </em></mark></strong></p></h2>
+            <h3><p><strong><mark><em> Vocabulary review </em></mark></strong></p></h3>
+
+            <p> Here are some important CSS terms that you've learned so far: <br>
+            
+            <ol><ul><li> <strong>DOM </strong>, or Document Object Model, is a tree structure with a node for each HTML element, piece of text, image, and any other object in the web page.</li>
+                    <li> <strong>Selectors</strong> are one part of the CSS ruleset. They indicate which HTML element(s) the rule is for.</li>
+                    <li> <strong>Declaration blocks</strong> are the other part of the CSS ruleset, they say how the rule will modify the elements indicated by selectors.</li>
+                    <li> CSS <strong>rules</strong> are composed of a selector followed by a declaration block.</li>
+                    <li> <strong>type</strong> is the simplest kind of selector. It indicates the name of one type of HTML element (such as em or li).</li>
+                    <li> <strong>class</strong> in HTML is an attribute that groups elements together that you want to have the same style.</li>
+                    <li> <strong> id </strong> is an attribute that must be unique to a single element, used to identify it.</li></ul></ol></p>
+           
+
+<hr>
+
+        <h2><p><strong><mark><em> DSS Lesson(17) </em></mark></strong></p></h2>
+
+        <h3><p><strong><mark><em> CSS selectors </em></mark></strong></p></h3>
+
+        <p> You've now learned about three kind of CSS selectors: <strong>type, class, and ID!</strong>
+        
+            <strong>Type</strong> selectors are used to apply a style to a particular type of HTML element, like h1 or body. <br> Type selectors are written using just the type name.
+            <strong>Class</strong> selectors are used to set the style for multiple HTML elements that have a particular value for the class attribute.<br> You can name a class anything you want! Class selectors are written with a dot before the class: for elements such as (p class="blue"), <br> the class selector is .blue.\
+            <strong>ID</strong> selectors are used when the style is being applied to one HTML element, which has to have an id attribute. <br> There can be only one element with a particular id on a page. You can also choose any name you want for an id, just like a class.<br>  ID selectors are written using a # sign: for an element such as (div id="sidebar"),<br> the id selector is #sidebar.</p>
+
+            <hr> 
+
+            <h2><p><strong><mark><em> DSS Lesson(21) </em></mark></strong></p></h2>
+
+            <p> <mark> <strong> What so cascading about cascading style sheets..?? </strong></mark> <br> 
+            
+            Well, cascading has to do with how each node in the <strong> DOM </strong> tree gets its 
+            styles to find. <br> <em> Basically </em>, any style property to find on a node will apply as 
+            a default to all that nodes <strong> descendants </strong>. </p>
+
+            <p> <mark><strong><em> SO </em></strong></mark>, <br>
+            
+            That's what so cascading about cascading style sheets, each style property that's define <br> 
+            on a node will cascade or spill down the tree to that node's children and descendants. </p>
+
+            <hr> 
+
+            <h2><p><strong><mark><em> DSS Lesson(23) </em></mark></strong></p></h2>
+
+            <div> The basic unit of measurment in <mark> CSS </mark> is the <strong> pixels </strong>
+            or <strong> px </strong> for short.<br> <strong> Pixels </strong> are the unit that you'll see developer
+            tools using to measure the size of a box element. </div>
+
+            
+
+            <b class="important">  The <strong> Pixel </strong> is <mark> 96 </mark> of an <em> inch </em>, <mark> 96 </mark> pixels
+            per inch was a common screen resulotion when <mark> CSS </mark> was being 
+            standardized. </b>
+
+            <div> So, that's what the <mark> CSS </mark> px unit was set of. <mark> CSS
+            </mark> measurments is defined in terms of traditional American units.<br>
+            There <mark> 96 </mark> <strong> CSS Pixels </strong> to the inch which means there 
+            <mark> 37.8 </mark> <strong> CSS Pixels </strong> to the centimter. </div>
+
+            <div> The <mark> CSS </mark> property <em> width </em> sets how wide will element 
+            will apear, when apply this on <mark> HTML </mark> you get a <br>
+            skinny paragraph to inches wide. </div>
+
+            <b class="important"> The <mark> point </mark> or <mark> pt </mark>, a point is just <mark> 72 </mark> of an inch.
+            In <mark> <strong> CSS</strong></mark> points aren't only for font size but that where they're
+            <em> most common.</em></b>
+
+            <hr>
+
+
+            <h2><p> <strong><mark><em> DSS Lesson(28) </em></mark></strong></p></h2>
+
+            <p> <mark> Pretty often </mark> in <strong> CSS </strong> :- <br>
+            We don't wanna say make this box exactly <em> 200 px</em> wide, we wanna say something more like 
+            make this box take up half of the page width, <br> <strong> but </strong> we don't how wide the user's 
+            browser window width. </p>
+
+            <div> <em> SO, </em> we can't just say the number of <mark> (pxs) </mark> or <mark> (ems) </mark>
+            or something for this. </div>
+
+            <b> We can do this use a <strong> percentage .</strong></b>
+
+            
+            <br><br>
+            <div> <strong> CSS </strong> also uses <em> percentages </em> for something pretty different
+            which is, <strong> (Scaling things up or down).</strong></div>
+
+
+            <hr>
+
+            <h2><p> <strong><mark><em> DSS Lesson(29) </em></mark></strong></p></h2>
+
+            <b> If you wanna anything about <strong> CSS </strong> or any properties,  you can just go to any
+            browser or links and search about it.</b>
+
+
+            <hr>
+
+            
+            <h2><p> <strong><mark><em> DSS Lesson(30) </em></mark></strong></p></h2>
+
+            <p> If you wanna make the same style for your <strong> HTML </strong> that you have it,
+            copying the same <strong> CSS </strong> code to each of these pages would be a big <br> 
+            <mark> waste </mark> of space. To make all of your <strong> HTML </strong> codes in the same style,
+            we can put the <mark> CSS </mark> <br> into a <mark> seoarate </mark> file and linked to that file 
+            from the <strong> HTML </strong>.</p>
+
+            <b> To do this you'll put a special tag in the<strong> HTML </strong> head. </b>
+             make this:-<br>
+
+             (link rel="stylesheet"
+                   href="URL of the stylesheet file")
+
+            <div> This <em> (link) </em> element goes inside the <em> (head) </em> element on the <strong> HTML</strong> file.</div>       
+
+
+            <hr>
+
+            <h2><p> <strong><mark><em> DSS Lesson(32) </em></mark></strong></p></h2>
+
+            <div> The web isn't a box of crayons, you should be able to make any color that you want and indeed you 
+                can. <br> You can make new colors by mixing the <strong> primary colors </strong> :- <ol><ul>
+                    <li class="red;">red</li>
+                    <li class="green;">green</li>
+                    <li class="blue;">blue</li>
+                </ul></ol>
+                for instance, If we mix <em> 100 </em> percent red with <em> 50 </em> percent green, we'll 
+                get this bright orange. 
+            </div>
+
+            <div> In web browsers, each primary color(red, green, blue) can have 256 possible values.<br>
+            This is because each primary color is stored in a single <em> byte </em>, a space in memory 
+            that can hold a number from <strong> 0 </strong> to <strong> 255.</strong> We can write 
+            a <em> byte </em> value as a number from <strong> 0 </strong> to <strong> 255,</strong> <br>
+            bute we can also write it as a number in <mark> hexadecimal </mark> or hex base 16.</div>
+
+            <p> In <strong> Hex, </strong> each digit can go from <em> Zero </em> to <em> Nine </em>, and then 
+            from <em> A </em> to <em> F </em>. <mark> Hex codes </mark> are definitely harder for most folks 
+            <br> to figure out, but they're traditional on the web and web designers like to joke around about them.</p>
+
+<hr>
+
+            <h2><p> <strong><mark><em> DSS Lesson(35) </em></mark></strong></p></h2>
+
+            <div> In this lesson, we'll just touch the basics that every <strong> CSS </strong> user will need.</div>
+
+            <p> ****      If you ask for a <em> font-family </em> and the user's device doesn't have it, 
+            <strong> CSS </strong> just won't do anything<br> ( <em> it will just leave the text and the default <strong> font-family </strong>
+            which is usually something boring but <mark> inoffensive</mark> </em>). </p>
+
+
+            <b> What are the five general categories of fonts..?? </b><ol><ul>
+                <li class="serif"> serif </li>
+                <li class="sans-serif;"> sans-serif</li>
+                <li class="cursive"> cursive </li>
+                <li class="fantasy"> fantasy</li>  
+                <li class="monospace"> monospace</li>
+
+            </ul></ol>
+
+
+            <p> Font stack:- A list of font alternatives the browser will pick the first it can.</p>
+
+            <p> ****     Other things you maight want to control about the font like <ol> <li class="bold"> bold</li> 
+            <li class="italic"> italic </li>
+            <li class="underline"> underline </li>
+            </ol> Actually work kind of differently in <strong> CSS </strong> than they do in a word processor.<br>
+            In Google Docs, Bold and Italic and Underline are all just buttons right next to each other , But in <strong> CSS </strong> 
+            these are all controlled by different properties.<br>
+
+            ****  Bold is font-weight --- font-weight:bold;                   ****<br>
+            ****  Italic is font-style --- font-style:italic;                 ****<br>
+            ****  Underline is text-decoration --- text-decoration:underline; ****<br> 
+        </p>
+
+
+        <div> You can just write <em> font </em> without write it like font-size, font-family, etc... 
+        <strong> but, </strong> you're gonna write in an ordered way.</div>
+
+
+        <hr>
+
+        <h2><p> <strong><mark><em> DSS Lesson(41) </em></mark></strong></p></h2>
+
+        <p> Nowadys, The webs aren't just documents , It could be a game, a photo galler or a messagning 
+            service. <em>So </em> apps need a much more flexible sort of layout that an article or <br> a noval does.
+            ans <strong> CSS </strong> has grown to support that change over time.
+            
+            
+        </p>
+
+        <p> <h3> The Flexbox :- </h3> <br>
+        It's a way to ask <strong> CSS </strong> to change the rules for how boxes are laid out onto the page
+        in away<br> That's more <em> flexible </em> than the usual document-based approach.</p>
+
+        <p> The property  <mark> "display: flex;" </mark> will make the boxes side by side, and If the browser window is resized
+            ,<em> these elements resize to fit the screen </em>.<br>
+            Flexboxes gets us something that floats don't -  <em> when you don't have enough room or space on the web 
+            </em> try to use the <mark> "flex-wrap: wrap;" </mark>, then when you resized the browser window the boxes
+            will <strong> wrapped down.</strong> 
+        </p>
+
+
+        <hr> <br><br>
+        <p> If you wanna make <em>flexboxes </em> or <em> any boxex </em> that you want it, you have to <br>
+        do many things that will help you at all of your working :- <br>
+        <ol> <li> You will use a container <b>(call it what you want)</b> and do many things to it,
+            such as:- <ul><li> <em>width</em> </li> <li><em> height </em></li> <li> <em>display</em> </li> 
+            <li> <em>border</em> </li> <li> Also you can use the <em> flex-wrap </em></li></ul>  
+        </li> 
+        <li> Then you will use the main element or the main class to put the properties to it, for instance
+         <ul>   <li> <em> Width </em></li> <li><em> height</em></li> <li><em> Float </em></li> <li><em> The font-family </em>for the font that you are using it</li>
+            <li> <em> border </em> if you want</li>
+            <li> <em> list-style </em> you can use it to delete the points that it's behind the words </li>
+            <li> <em> background-color </em> you can use it if you wanna apply a color for the background</li>
+            <li> <em> margin </em> to make spaces between the boxes </li>
+            <li> <em> text-align </em> if you wanna make your words in a place like:- center </li>
+            <li> <em> font-size </em></li></ul>
+        </li></ol> </p>
+        </body>
+
+</html>
